@@ -1,3 +1,4 @@
+#Day - 10
 a = input ("enter your name:")
 print ("hello " + a)
 
