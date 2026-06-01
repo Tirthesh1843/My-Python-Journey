@@ -38,47 +38,13 @@ options = [
     ["Leonhard Euler", "Pierre de Fermat", "Carl Gauss", "Rene Descartes"]
 ]
 
-amounts = [
-    "₹1,000",
-    "₹2,000",
-    "₹3,000",
-    "₹5,000",
-    "₹10,000",
-    "₹20,000",
-    "₹40,000",
-    "₹80,000",
-    "₹1,60,000",
-    "₹3,20,000",
-    "₹6,40,000",
-    "₹12,50,000",
-    "₹25,00,000",
-    "₹50,00,000",
-    "₹1,00,00,000",
-    "₹7,00,00,000"
-]
+amounts = ["₹1,000","₹2,000","₹3,000","₹5,000","₹10,000","₹20,000","₹40,000","₹80,000","₹1,60,000","₹3,20,000","₹6,40,000","₹12,50,000","₹25,00,000","₹50,00,000","₹1,00,00,000","₹7,00,00,000"]
 
-correct_answers = [
-    "B",  # Mars
-    "C",  # Dr. B. R. Ambedkar
-    "C",  # Gandhinagar
-    "C",  # Stack
-    "B",  # Rabindranath Tagore
-    "D",  # Au
-    "B",  # Python
-    "D",  # Pacific Ocean
-    "C",  # 1947
-    "C",  # Central Processing Unit
-    "D",  # Chandrayaan-3
-    "C",  # Albert Einstein
-    "B",  # O(log n)
-    "B",  # Australia
-    "C",  # Sun Microsystems
-    "B"   # Pierre de Fermat
-]
+correct_answers = ["B", "C", "C", "C", "B", "D", "B", "D", "C", "C", "D", "C", "B", "B", "C", "B"]
 answers = ["A", "B", "C", "D"]
 for i in range(len(questions)):
     print("Q.", i+1, questions[i])
-    for j in range(4):
+    for j in range(len(options[i])): #changed 4 to len(options[i]) to make it dynamic
         print(answers[j] + ".", options[i][j])
     user_answer = input("Your answer (A/B/C/D): ").upper()
     if user_answer == correct_answers[i]:
