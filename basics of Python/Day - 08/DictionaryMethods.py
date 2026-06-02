@@ -33,3 +33,7 @@ print (dic.values()) #returns a list of all the values in the dictionary
 print (dic.items()) #returns a list of all the key-value pairs in the dictionary
 dic.pop(11) #removes the key-value pair with the specified key and returns the value
 print (dic)
+
+# add new key-value pair to the dictionary
+dic[6] = "gobta"
+print (dic)
