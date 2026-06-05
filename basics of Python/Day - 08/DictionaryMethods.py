@@ -37,3 +37,5 @@ print (dic)
 # add new key-value pair to the dictionary
 dic[6] = "gobta"
 print (dic)
+
+#update the value of an existing key in the dictionary
