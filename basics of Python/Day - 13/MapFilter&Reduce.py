@@ -14,6 +14,19 @@ l = [1, 2, 4, 6, 4, 5]
 newl = list(map(cube, l)) #
 print (l, " -> ", newl)
 
-name = "Tirthesh"
-print(name[0:4])
-print(name[-4:-1])
+#filter
+def filter_function(a):
+    return a>4
+
+newnewl = filter(filter_function, l)
+print (l, " -> ", list(newnewl))
+
+#reduce
+from functools import reduce
+newnewnewl = reduce(lambda x, y: x+y, l)
+print (l, " -> ", newnewnewl)
+
+def mysum(x,y):
+    return(x+y)
+
+sum = reduce(mysum, l)
