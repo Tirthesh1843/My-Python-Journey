@@ -15,4 +15,7 @@ a = Employee ()
 print(a.name)
 print(a._age)
 # print(a.__salary) this will give error
-print(a._Employee__salary) #this will work  
+print(a._Employee__salary) #this will work it's  a name mangling.
+
+#name mangling is a way to access private variables. It's not a good practice to use name mangling.
+
